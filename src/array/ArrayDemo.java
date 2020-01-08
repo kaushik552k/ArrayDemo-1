@@ -10,34 +10,34 @@ package array;
 import java.util.Arrays;
 
 public class ArrayDemo {
-
     public static void main(String[] args) {
-/*
-        for (int i = 0; i < integers.length; i++) {
-            System.out.print(integers[i] + ", ");
-        }
-*/
-        /*for (int i : integers) {
-            System.out.print(i + ", ");
+        int[] intergers = new int[10];
+        initializeIntegerArray(intergers);
+       /* for (int i = 0; i < intergers.length; i++) {
+            System.out.println(intergers[i] + ",");
         }*/
-        int[] integers = new int[10];
-        printArrayValues(integers);
-        initialiseIntegerArray(integers);
-        printArrayValues(integers);
+        /*for (int i:intergers){
+            System.out.println(i+",");
+        }*/
+       public static void printArrayValues( int[] integers){
+           System.out.println(Arrays.toString(intergers));
+        }
 
+
+
+/**
+ * insert
+ * delete
+ * search
+ * sort
+ * traverse
+ *
+ */
     }
 
-    /*public static boolean searchInArray(int[] array, int value) {
-
-    }*/
-
-    public static void printArrayValues(int[] integers) {
-        System.out.println(Arrays.toString(integers));
-    }
-
-    public static void initialiseIntegerArray(int[] integerArray) {
-        for (int i = 0; i < integerArray.length; i++) {
-            integerArray[i] = (i + 1);
+    public static void initializeIntegerArray(int[] intergers) {
+        for (int i = 0; i < intergers.length; i++) {
+            intergers[i] = (i+1);
         }
     }
 }
